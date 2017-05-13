@@ -13,6 +13,13 @@ namespace OAuth.Repository.Repository
         int DeleteUser(User obj);
 
 
+        int CreateExternalUserLogin(ExternalUserLogin obj);
+        int UpdateExternalUserLogin(ExternalUserLogin obj);
+        IQueryable<ExternalUserLogin> GetAllExternalUserLogin();
+        ExternalUserLogin GetExternalUserLogin(int Id);
+        int DeleteExternalUserLogin(ExternalUserLogin obj);
+
+
         int CreateClient(Client obj);
         int UpdateClient(Client obj);
         IQueryable<Client> GetAllClient();

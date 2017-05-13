@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AngularJSAuthentication.API.Models
+namespace OAuth.Api.Models
 {
     public class ExternalLoginViewModel
     {

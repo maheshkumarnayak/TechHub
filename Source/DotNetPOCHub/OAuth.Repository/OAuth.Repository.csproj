@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Context\OAuthContext.cs" />
     <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\ExternalUserLogin.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Enums.cs" />
     <Compile Include="Entities\RefreshToken.cs" />
@@ -72,6 +73,10 @@
     <Compile Include="Migrations\201705130742532_InitialCreate4.Designer.cs">
       <DependentUpon>201705130742532_InitialCreate4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705132020357_ExternalUserLoginTableCreate.cs" />
+    <Compile Include="Migrations\201705132020357_ExternalUserLoginTableCreate.Designer.cs">
+      <DependentUpon>201705132020357_ExternalUserLoginTableCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\AccountRepository.cs" />
@@ -95,9 +100,14 @@
     <EmbeddedResource Include="Migrations\201705130742532_InitialCreate4.resx">
       <DependentUpon>201705130742532_InitialCreate4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705132020357_ExternalUserLoginTableCreate.resx">
+      <DependentUpon>201705132020357_ExternalUserLoginTableCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

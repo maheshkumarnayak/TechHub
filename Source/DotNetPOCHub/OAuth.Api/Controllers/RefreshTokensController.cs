@@ -1,9 +1,4 @@
 ﻿using OAuth.Repository.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace OAuth.Api.Controllers
@@ -43,7 +38,7 @@ namespace OAuth.Api.Controllers
         {
             if (disposing)
             {
-               // _repo.Dispose();
+               _repo.Dispose();
             }
             base.Dispose(disposing);
         }

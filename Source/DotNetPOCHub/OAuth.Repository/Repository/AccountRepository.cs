@@ -39,6 +39,32 @@ namespace OAuth.Repository.Repository
         } 
         #endregion
 
+        #region ExternalUserLogin
+        public int CreateExternalUserLogin(ExternalUserLogin obj)
+        {
+            _ctx.ExternalUserLogins.Add(obj);
+            return _ctx.SaveChanges();
+        }
+        public int UpdateExternalUserLogin(ExternalUserLogin obj)
+        {
+            _ctx.ExternalUserLogins.Add(obj);
+            return _ctx.SaveChanges();
+        }
+        public IQueryable<ExternalUserLogin> GetAllExternalUserLogin()
+        {
+            return _ctx.ExternalUserLogins;
+        }
+        public ExternalUserLogin GetExternalUserLogin(int Id)
+        {
+            return _ctx.ExternalUserLogins.Find(Id);
+        }
+        public int DeleteExternalUserLogin(ExternalUserLogin obj)
+        {
+            _ctx.ExternalUserLogins.Remove(obj);
+            return _ctx.SaveChanges();
+        }
+        #endregion
+
         #region Client
         public int CreateClient(Client obj)
         {

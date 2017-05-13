@@ -1,12 +1,10 @@
 ﻿using Microsoft.Owin;
+using Microsoft.Owin.Security.Facebook;
+using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using OAuth.Api.Providers;
 using Owin;
 using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -38,7 +36,6 @@ namespace OAuth.Api
             WebApiConfig.Register(config);
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
             app.UseWebApi(config);
-            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<AuthContext, AngularJSAuthentication.API.Migrations.Configuration>());
 
         }
 

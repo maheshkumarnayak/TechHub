@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OAuth.Repository.Entities
 {
@@ -8,6 +9,7 @@ namespace OAuth.Repository.Entities
         public int Id { get; set; }
 
         [Required]
+        [Index(IsUnique = true)]
         public string UserName { get; set; }
 
         [Required]

@@ -88,7 +88,8 @@ namespace OAuth.Api.Providers
             {
                 var password=Helper.GetHash(context.Password);
                 var user = _repo.GetAllUser().Where(x => x.UserName == context.UserName && x.Secret == password).ToList();
-                if (user == null)
+                
+                if (user == null || user.Count <= 0)
                 {
                     context.SetError("invalid_grant", "The user name or password is incorrect.");
                     return Task.FromResult(0);
