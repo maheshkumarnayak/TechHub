@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E014C73-D340-449F-AB32-8E261FD26B1F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OAuth.Repository</RootNamespace>
+    <AssemblyName>OAuth.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\OAuthContext.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Enums.cs" />
+    <Compile Include="Entities\RefreshToken.cs" />
+    <Compile Include="Entities\Client.cs" />
+    <Compile Include="Migrations\201705121817079_InitialCreate.cs" />
+    <Compile Include="Migrations\201705121817079_InitialCreate.Designer.cs">
+      <DependentUpon>201705121817079_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705130716162_InitialCreate1.cs" />
+    <Compile Include="Migrations\201705130716162_InitialCreate1.Designer.cs">
+      <DependentUpon>201705130716162_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705130720200_InitialCreate2.cs" />
+    <Compile Include="Migrations\201705130720200_InitialCreate2.Designer.cs">
+      <DependentUpon>201705130720200_InitialCreate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705130732527_InitialCreate3.cs" />
+    <Compile Include="Migrations\201705130732527_InitialCreate3.Designer.cs">
+      <DependentUpon>201705130732527_InitialCreate3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705130742532_InitialCreate4.cs" />
+    <Compile Include="Migrations\201705130742532_InitialCreate4.Designer.cs">
+      <DependentUpon>201705130742532_InitialCreate4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AccountRepository.cs" />
+    <Compile Include="Repository\OrderRepository.cs" />
+    <Compile Include="Repository\IOrderRepository.cs" />
+    <Compile Include="Repository\IAccountRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705121817079_InitialCreate.resx">
+      <DependentUpon>201705121817079_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705130716162_InitialCreate1.resx">
+      <DependentUpon>201705130716162_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705130720200_InitialCreate2.resx">
+      <DependentUpon>201705130720200_InitialCreate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705130732527_InitialCreate3.resx">
+      <DependentUpon>201705130732527_InitialCreate3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705130742532_InitialCreate4.resx">
+      <DependentUpon>201705130742532_InitialCreate4.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
