@@ -45,6 +45,8 @@ build/
 *.pidb
 *.log
 *.scc
+*.map
+node_modules
 
 # Visual C++ cache files
 ipch/
@@ -154,3 +156,5 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/Source/DotNetPOCHub/packages
+/Source/DotNetPOCHub/Angular2Mvc5Application1/app/*.js
