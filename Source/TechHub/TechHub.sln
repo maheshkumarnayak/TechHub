@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechHub", "TechHub\TechHub.csproj", "{1F7C7207-9631-4CE5-8CB6-F32949F31370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracitceHub", "PracitceHub\PracitceHub.csproj", "{B6A11C5E-919A-4AB6-8737-6A3CE316504D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1F7C7207-9631-4CE5-8CB6-F32949F31370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F7C7207-9631-4CE5-8CB6-F32949F31370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F7C7207-9631-4CE5-8CB6-F32949F31370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A11C5E-919A-4AB6-8737-6A3CE316504D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A11C5E-919A-4AB6-8737-6A3CE316504D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A11C5E-919A-4AB6-8737-6A3CE316504D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A11C5E-919A-4AB6-8737-6A3CE316504D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
