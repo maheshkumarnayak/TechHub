@@ -12,7 +12,7 @@ namespace PracitceHub
         static void Main(string[] args)
         {
             MyTaskFactory taskFactory = new MyTaskFactory();
-            ITask task = taskFactory.getTask(TaskType.Class);
+            ITask task = taskFactory.getTask(TaskType.MultiThreading);
             task.Execute();
             Console.ReadLine();
         }

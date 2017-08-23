@@ -9,6 +9,7 @@ namespace PracitceHub.Factory
     public enum TaskType
     {
         MultiThreading,
+        Delegate,
         Class
     }
 }
