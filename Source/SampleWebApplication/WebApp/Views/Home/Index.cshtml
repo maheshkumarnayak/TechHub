@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-10">
+            Search By : 
+            <select id="searchby" style="height: 45px;">
+                <option value="0">-Select-</option>
+                <option value="1">EmployeeType</option>
+                <option value="2">DesignationType</option>
+                <option value="3">EmployeeName</option>
+            </select>
+            Search Value : 
+            <input class="input-lg" id="searchValue"/>
+            <button class="btn-primary btn-lg" id="btnsearch"> Search</button>
+        </div>
+    </div>
+    <table class="table" id="emptable">
+        <thead>
+            <tr>
+                <th><a sortType="3" class="sorting" href="#">Employee Name</a></th>
+                <th><a sorttype="1" class="sorting" href="#">Employee Type</a></th>
+                <th><a sorttype="2" class="sorting" href="#">Designation</a></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div id="paginationholder"><ul id="pagination" class="pagination-sm"></ul></div>
+</div>
+
+
+@section scripts{
+    <script src="~/Scripts/employee.js"></script>
+}
