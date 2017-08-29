@@ -62,7 +62,6 @@
 
     function refreshPageInfo(res)
     {
-        debugger;
         $('#pagination').twbsPagination('destroy');
         $('#pagination').twbsPagination({
             totalPages: res.TotalRecord / res.RecordInPage < 1 ? 1 : Math.round(res.TotalRecord / res.RecordInPage),
